@@ -16,5 +16,3 @@
    ```bash
    git clone <https://github.com/harshbatra01/Role-based-application>
 
-cd <project_directory>
-npm install
