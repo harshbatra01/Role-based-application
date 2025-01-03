@@ -30,6 +30,10 @@ const userSchema = new mongoose.Schema({
     isWriter: {
       type:Boolean,
       default: false,
+    },
+    isReader: {
+      type:Boolean,
+      default: false,
     }  
   }
 });

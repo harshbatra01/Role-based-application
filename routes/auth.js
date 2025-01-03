@@ -6,9 +6,10 @@ const authController = require('../controllers/auth');
 const isAuth = require('../middleware/auth');
 const isAdmin = require('../middleware/admin');
 const isWriter = require('../middleware/writer');
+const isReader = require('../middleware/reader');
 
 
-router.get('/me', [isAuth, isAdmin, isWriter], authController.me);
+router.get('/me', [isAuth, isAdmin, isWriter, isReader], authController.me);
 
 router.get('/:userId',  authController.userId);
 
